@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Acentos</title>
+    <meta name="description" content="Remover acentos - NFD">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- incluir a biblioteca de icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body> 
+	<nav class="navbar">
+		<div class="max-width">
+			<ul class="logo">
+				<li><a href="index.html"><i class="fa-solid fa-bars"></i>&nbsp;Menu</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <main id="formatador">
+      <section id="section_formatador">
+        <h1>Remover acentos - NFD:</h1>
+
+        <p>Digite o texto:</p>
+
+        <textarea type="text" name="rmAcentos" id="rmAcentos" rows="2" placeholder="Digite uma palavra, frase, ou texto!" autofocus required></textarea>
+
+        <ul>
+          <li>Remover acentos do texto que está na área de texto</li>
+          <li>Apagar o conteúdo da área de texto</li>
+          <li>Recarregar a página</li>
+        </ul>
+      </section>
+
+      <section id="btn_opcoes">
+        <button id="btn_acao" class="converter" type="button" onclick="rmAcentos()">Remover</button>
+        <button class="apagar" type="reset" onclick="apagar()">Apagar</button>
+        <button class="recarregar" type="reset" onclick="recarregar()">Recarregar</button>
+      </section>       
+
+      <section id="section_aviso">        
+        <div id="aviso">click 👉 </div>
+          <button type="button" onclick="aviso()">Aviso!</button>
+          <button type="button" onclick="document.getElementById('aviso').innerHTML = ''">Ok</button>
+      </section> 
+      
+      <section id="resposta">
+          <div id="rAcentos"></div>
+      </section>
+        
+      <div class="texto-teste">        
+        <div class="texto-teste-content">
+          <h3>Texto para teste:</h3>
+          <button onclick="copiarTexto()">Copiar</button>   
+        </div>
+      
+        <input type="text" id="textCopp" value="ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐ ÑÒÓÔÕÖØÙÚÛÜ ÝŔÞß àáâãäåæçèéêëìíîïð ñòóôõöøùúûüýþÿŕ -  '2009' - (São Paulo)? | 2023 - (Salvador - BA)!" readonly disabled>       
+      </div>
+  </main> 
+
+<!-- incluir o JavaScript -->
+<script src="js/formatador.js"></script>  
+</body>
+</html>

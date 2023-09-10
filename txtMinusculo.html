@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras Minúsculas</title>
+    <meta name="description" content="Converter texto para Letras Minúsculas">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- incluir a biblioteca de icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="max-width">
+			<ul class="logo">
+				<li><a href="index.html"><i class="fa-solid fa-bars"></i>&nbsp;Menu</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <main id="formatador">
+      <section id="section_formatador">
+        <h1>Converter texto para minúsculas</h1>
+
+        <p>Digite o texto:</p>
+
+        <textarea type="text" name="txtMinusculo" id="txtMinusculo" placeholder="Digite uma palavra, frase, ou texto!" autofocus required></textarea>
+
+        <ul>
+          <li>Converter o conteúdo da área de texto</li>
+          <li>Apagar o conteúdo da área de texto</li>
+          <li>Recarregar a página</li>
+        </ul>
+      </section>
+
+      <section id="btn_opcoes">
+        <button class="converter" type="button" onclick="txtMinusculo()">Converter</button>
+        <button class="apagar" type="reset" onclick="apagar()">Apagar</button>
+        <button class="recarregar" type="reset" onclick="recarregar()">Recarregar</button>
+      </section>   
+
+      <section id="section_aviso">              
+        <div id="aviso">click 👉 </div>
+          <button type="button" onclick="aviso()">Aviso!</button>
+          <button type="button" onclick="document.getElementById('aviso').innerHTML = ''">Ok</button>
+      </section>  
+      
+      <section id="resposta">
+        <p id="rTexMin"></p>
+      </section>
+        
+      <div class="texto-teste">        
+        <div class="texto-teste-content">
+          <h3>Texto para teste:</h3>
+          <button onclick="copiarTexto()">Copiar</button>   
+        </div>
+      
+        <input type="text" id="textCopp" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur, qui eaque laudantium quam earum vel nobis cupiditate sapiente odio sint non maiores eum magni cumque vitae magnam accusamus veritatis?" readonly disabled>       
+      </div>
+  </main> 
+
+<!-- incluir o JavaScript -->
+<script src="js/formatador.js"></script>  
+</body>
+</html>

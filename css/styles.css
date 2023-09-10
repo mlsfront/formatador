@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Roboto+Mono&family=Roboto+Condensed&family=Handjet:wght@300&family=Courier+Prime:wght@400&family=Ubuntu+Condensed&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.5;
+    font-size: 1em; 
+    padding: 7px 12px;
+}
+
+#main-mls {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo {
+    list-style-type: none;
+}
+
+/* HELPE */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* FORMATADOR */
+#formatador {
+    width: 80%;
+    padding: 25px;
+    margin-top: 70px;
+    min-height: 444px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formatador h1 {
+    color: #00f;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media only screen and (max-width:500px) {
+    #formatador {
+        width: 100%;
+        padding: 7px;
+    }
+
+    #formatador ul {
+        margin-left: 14px;
+    }
+}
+
+#formatador ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#formatador #section_formatador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#formatador textarea {
+    width: 100%;
+    min-height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 7px;
+    text-align: justify;
+    margin: 3px 0 7px;
+}
+
+/* BOTOES*/
+#btn_opcoes, #section_aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+button {
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    margin: 0 3px;
+}
+
+button.converter {
+    background-color: green;
+    color: #c9dfff;
+}
+
+button.apagar {
+    background-color: red;
+    color: #c9dfff;
+}
+
+button.recarregar {
+    background-color: yellow;
+}
+
+/* BTN AVISO */
+#section_aviso {
+    padding: 7px;
+}
+
+#section_aviso i {
+    color: #e29c0f;
+    padding: 7px;
+}
+#section_aviso button[onclick="innerHTML"]{
+    color: red;
+}
+ 
+.aviso-btn {
+    color:#e29c0f; 
+    background-color:#232526;
+    padding:3px;
+    border-radius: 3px;
+}
+
+/* AVISO */
+input[id='textCopp'] {
+    background: none;
+    border: 1px solid rgba(35,37,38,.2);
+    padding: 7px;
+    width: 100%;
+    height: 40px;
+}
+
+/* RESPOSTA */
+#resposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resposta-js {
+    margin-top: 14px;
+    border: 1px solid #232526;
+    padding: 7px;
+    text-align: justify;
+    border-radius: 7px;
+    min-width: 220px;
+}
+
+/* TESTO TESTE*/
+.texto-teste {
+    padding: 14px 0;
+}
+
+.texto-teste-content {
+    display: flex;
+    align-items: center;
+}
+
+.texto-teste-content button {
+    height: 23px;
+    border: 1px solid #e39d10;
+    display: flex;
+    align-items: center;
+}
+
+.texto-teste h3 {
+    font-weight: normal;
+}
+/* FIM FORMATADOR */
+
