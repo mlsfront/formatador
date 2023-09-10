@@ -157,7 +157,7 @@ function copiarTexto() {
 //Aviso
 function aviso(){
     let aviso = document.getElementById('aviso')
-    aviso = aviso.innerHTML = '<span class=\'aviso-btn\'><i class=\'fas fa-triangle-exclamation\'></i>Você vai precisar selecionar e copiar seu texto manualmente quando esiver disponível!</span>'
+    aviso = aviso.innerHTML = '<span class=\'aviso-btn\'><i class=\'fas fa-triangle-exclamation\'></i>Você vai precisar selecionar e copiar seu texto manualmente quando estiver disponível!</span>'
 }
 /*document.getElementById("aviso").addEventListener("mouseover", mouseOver);
 document.getElementById("aviso").addEventListener("mouseout", mouseOut);
